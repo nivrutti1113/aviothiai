@@ -101,7 +101,10 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <a href="https://chat.whatsapp.com/JjNmOl4CwCc24aUTzGVMVM" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-violet-600 transition-colors">WhatsApp Group</a>
+                    <div className="flex flex-col space-y-2">
+                                          <a href="https://chat.whatsapp.com/JjNmOl4CwCc24aUTzGVMVM" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-violet-600 transition-colors">WhatsApp Group</a>
+                                          <a href="mailto:founder@aviothic.in" className="text-gray-600 hover:text-violet-600 transition-colors">founder@aviothic.in</a>
+                                        </div>
                   </div>
                 </div>
 
