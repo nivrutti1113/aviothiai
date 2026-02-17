@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import PerformanceDashboardSection from '../components/sections/PerformanceDashboardSection';
+import FAQSection from '../components/sections/FAQSection';
 
 
 const HomePage = () => {
@@ -432,6 +433,7 @@ const HomePage = () => {
       </section>
       
       <PerformanceDashboardSection />
+      <FAQSection />
     </div>
   );
 };
