@@ -82,13 +82,15 @@ const FAQSection = () => {
 
         <div className="text-center mt-12">
           <p className="text-slate-600 mb-4">
-            Still have questions? Get in touch with our team
+            Still have questions? Contact our team on WhatsApp.
           </p>
           <a
-            href="mailto:founder@aviothic.in"
+            href="https://chat.whatsapp.com/JjNmOl4CwCc24aUTzGVMVM"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center px-6 py-3 bg-violet-600 text-white font-medium rounded-lg hover:bg-violet-700 transition-colors"
           >
-            Contact Us
+            Contact Us on WhatsApp
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>

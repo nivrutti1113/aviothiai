@@ -101,7 +101,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
-                    <p className="text-gray-600">chavannivrutti635@gmail.com</p>
+                    <a href="https://chat.whatsapp.com/JjNmOl4CwCc24aUTzGVMVM" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-violet-600 transition-colors">WhatsApp Group</a>
                   </div>
                 </div>
 
@@ -126,7 +126,7 @@ const ContactPage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Address</h3>
-                    <p className="text-gray-600">Bangalore<br />India</p>
+                    <p className="text-gray-600">Mumbai<br />India</p>
                   </div>
                 </div>
               </div>
