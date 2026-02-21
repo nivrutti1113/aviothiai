@@ -18,7 +18,7 @@ const GovernmentPage = () => {
             Supporting Government Breast Cancer Screening Programs
           </h1>
           <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Clinical-grade AI assistance for public health initiatives in India
+            Advanced AI platform for breast cancer detection designed to support public health screening initiatives
           </p>
         </motion.section>
 

@@ -102,7 +102,7 @@ const WorldMapDots = ({
         viewBox="0 0 900 420"
         className="w-full h-auto"
         role="img"
-        aria-label="Dotted world map"
+        aria-label="Dotted world map demonstrating potential global reach"
       >
         {/* optional soft fade behind like Vara */}
         <defs>

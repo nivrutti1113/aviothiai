@@ -92,15 +92,15 @@ const GovernmentSection = () => {
             </h2>
             
             <p className="text-gray-700">
-              Our platform aligns with public health initiatives and government policies aimed at expanding access to early cancer detection. Through strategic partnerships with health ministries and public health organizations, we're building infrastructure to support nationwide screening programs.
+              Our platform is designed to support public health initiatives and government policies aimed at expanding access to early cancer detection. We are working toward establishing collaborations with health ministries and public health organizations to build infrastructure for future screening program support.
             </p>
             
             <p className="text-gray-700">
-              By leveraging AI technology, we help governments optimize resource allocation, reduce healthcare costs, and improve population health outcomes. Our cloud-native approach ensures rapid deployment and scalability across diverse healthcare systems.
+              Our AI technology is designed to support governments in optimizing resource allocation, reducing healthcare costs, and improving population health outcomes. The cloud-native approach enables rapid deployment and scalability across diverse healthcare systems.
             </p>
             
             <p className="text-gray-700">
-              We work closely with regulatory bodies to ensure our solutions meet all compliance requirements and support evidence-based policy decisions. Our commitment to transparency and accountability makes us a trusted partner for government health initiatives.
+              We are actively engaging with regulatory bodies to ensure our solutions align with compliance requirements and support evidence-based policy decisions. Our commitment to transparency and accountability positions us to be a trusted partner for future government health initiatives.
             </p>
           </div>
           
