@@ -773,6 +773,26 @@ const AboutPage = () => {
                 Dr. Prashant Patil leads clinical and translational research at Aviothic AI. His role focuses on clinical validation, evidence generation, and collaboration with medical institutions. He ensures that Aviothic AI's research roadmap remains scientifically rigorous and aligned with evolving standards in breast cancer screening and imaging.
               </p>
             </motion.div>
+
+            {/* Chief Clinical Advisor */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.6 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gray-100 overflow-hidden border border-gray-200 flex items-center justify-center transition-all duration-200 hover:bg-gray-50">
+                <svg className="w-16 h-16 text-gray-400" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 mb-2">Dr. Himmank</h3>
+              <p className="text-blue-600 font-medium mb-4">Chief Clinical Advisor</p>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                Dr. Himmank serves as Chief Clinical Advisor, providing strategic guidance on clinical implementation, regulatory compliance, and medical best practices. With extensive experience in radiology and breast imaging, he ensures that Aviothic AI's technology aligns with clinical workflows and delivers meaningful value to healthcare providers and patients.
+              </p>
+            </motion.div>
           </div>
         </motion.section>
 

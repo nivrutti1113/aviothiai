@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import HeroSection from '../components/core/HeroSection';
 import PerformanceDashboardSection from '../components/sections/PerformanceDashboardSection';
 import FAQSection from '../components/sections/FAQSection';
 
@@ -7,150 +9,8 @@ import FAQSection from '../components/sections/FAQSection';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 relative overflow-hidden pt-24">
-      {/* Liquid Background Blobs */}
-      <motion.div
-        className="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] bg-pink-400/40 rounded-full blur-3xl"
-        animate={{ x: [0, 50, -30], y: [0, 40, -20] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div
-        className="absolute bottom-[-20%] right-[-10%] w-[600px] h-[600px] bg-indigo-400/40 rounded-full blur-3xl"
-        animate={{ x: [0, -40, 20], y: [0, -30, 10] }}
-        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
-      />
-
-      {/* Hero Section - Enhanced for Hospitals & Radiologists */}
-      <section className="relative z-10 px-6 md:px-20 py-16 md:py-24 bg-gradient-to-br from-pink-50 via-white to-indigo-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="space-y-8"
-            >
-              <div>
-                <span className="inline-block px-4 py-2 bg-blue-100 text-blue-800 text-sm font-medium rounded-full mb-4">
-                  CE Marked & FDA Pending
-                </span>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                  <span className="block">AI-Powered</span>
-                  <span className="block text-indigo-600">Breast Cancer Detection</span>
-                  <span className="block text-2xl sm:text-3xl text-gray-700 mt-2 font-normal">for Clinical Excellence</span>
-                </h1>
-              </div>
-              
-              <p className="text-xl text-gray-700 max-w-lg">
-                Clinical-grade AI designed for real-world screening workflows in busy radiology departments.
-                Proven to reduce reading time by 40% while maintaining 98.5% sensitivity.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-                <div className="flex items-center p-3 bg-white rounded-lg border border-gray-200">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Clinical validation</span>
-                </div>
-                <div className="flex items-center p-3 bg-white rounded-lg border border-gray-200">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Workflow integrated</span>
-                </div>
-                <div className="flex items-center p-3 bg-white rounded-lg border border-gray-200">
-                  <div className="w-2 h-2 bg-green-500 rounded-full mr-3"></div>
-                  <span className="text-gray-700">Regulatory compliant</span>
-                </div>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold rounded-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 shadow-lg hover:shadow-xl"
-                >
-                  Schedule Demo
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                  </svg>
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center px-8 py-4 bg-white text-indigo-600 font-semibold rounded-lg border border-indigo-200 hover:bg-indigo-50 transition-all duration-200 shadow-md hover:shadow-lg"
-                >
-                  View Clinical Studies
-                  <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                  </svg>
-                </motion.button>
-              </div>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
-              className="flex justify-center"
-            >
-              <div className="bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden max-w-2xl w-full">
-                <div className="p-6 bg-gradient-to-r from-blue-600 to-indigo-700">
-                  <div className="flex items-center text-white">
-                    <svg className="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                    </svg>
-                    <div>
-                      <div className="text-sm font-medium">AI Analysis Dashboard</div>
-                      <div className="text-xs opacity-90">Real-time mammography analysis</div>
-                    </div>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="aspect-video bg-gray-900 rounded-xl border border-gray-200 flex items-center justify-center relative overflow-hidden">
-                    {/* Simulated mammography scan with AI overlay */}
-                    <div className="absolute inset-0 bg-gradient-to-br from-gray-800 via-gray-900 to-black flex items-center justify-center">
-                      <div className="relative w-full h-full flex items-center justify-center">
-                        {/* Simulated breast tissue pattern */}
-                        <div className="absolute w-4/5 h-3/5 bg-gradient-to-br from-gray-700 to-gray-800 rounded-full opacity-80"></div>
-                        
-                        {/* Simulated mass/density */}
-                        <div className="absolute w-1/5 h-1/5 bg-gradient-to-br from-red-500/30 to-red-600/20 rounded-full top-1/3 left-2/5 animate-pulse"></div>
-                        
-                        {/* AI analysis overlay */}
-                        <div className="absolute inset-0" style={{background: 'conic-gradient(from 45deg, transparent, rgba(239, 68, 68, 0.1), transparent 70%)'}}></div>
-                        
-                        {/* Grid overlay for analysis */}
-                        <div className="absolute inset-0 opacity-20">
-                          <div className="w-full h-full grid grid-cols-8 grid-rows-6">
-                            {Array.from({ length: 48 }).map((_, i) => (
-                              <div key={i} className="border border-gray-600/30"></div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="absolute top-4 left-4 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">
-                      HIGH RISK
-                    </div>
-                    <div className="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">
-                      CONFIDENCE: 94%
-                    </div>
-                  </div>
-                  <div className="mt-4 grid grid-cols-2 gap-4 text-sm">
-                    <div className="p-3 bg-blue-50 rounded-lg border border-blue-200">
-                      <div className="font-semibold text-blue-900">Detection</div>
-                      <div className="text-blue-700">BI-RADS 4A Suspicious</div>
-                    </div>
-                    <div className="p-3 bg-green-50 rounded-lg border border-green-200">
-                      <div className="font-semibold text-green-900">Recommendation</div>
-                      <div className="text-green-700">Biopsy Recommended</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section - Replaced with modern YC-style component */}
+      <HeroSection />
 
       {/* Clinical Value Proposition - For Hospitals & Radiologists */}
       <section className="relative z-10 px-6 md:px-20 py-16 md:py-24 bg-gradient-to-b from-pink-50/30 to-white">
@@ -434,6 +294,22 @@ const HomePage = () => {
       
       <PerformanceDashboardSection />
       <FAQSection />
+      
+      {/* Contact Section for scroll navigation */}
+      <section id="contact" className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-6 text-center">
+          <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
+          <p className="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+            Ready to transform healthcare with AI? Contact us to learn more about our platform.
+          </p>
+          <Link 
+            to="/contact" 
+            className="inline-block px-8 py-4 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-colors duration-300"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };
