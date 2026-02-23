@@ -30,19 +30,40 @@ const ContactPage = () => {
     setIsSubmitting(true);
     setSubmitStatus(null);
 
-    // For now, just show success message since email configuration is having issues
-    // In a real implementation, you would integrate with a proper email service
-    setTimeout(() => {
-      setSubmitStatus('success');
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        organization: '',
-        message: ''
+    try {
+      const response = await fetch('http://localhost:3001/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          organization: formData.organization,
+          message: formData.message
+        })
       });
+
+      const data = await response.json();
+      
+      if (data.success) {
+        setSubmitStatus('success');
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          organization: '',
+          message: ''
+        });
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -154,9 +175,9 @@ const ContactPage = () => {
                     <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span className="text-green-800 font-medium">Message received successfully!</span>
+                    <span className="text-green-800 font-medium">Message sent successfully!</span>
                   </div>
-                  <p className="text-green-700 text-sm mt-1">Thank you for your message. We'll contact you soon via email or WhatsApp.</p>
+                  <p className="text-green-700 text-sm mt-1">Thank you for your message. You should receive a confirmation email shortly, and we'll contact you soon.</p>
                 </div>
               )}
               

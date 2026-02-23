@@ -9,6 +9,9 @@ import ImpactPage from './pages/ImpactPage';
 import ContactPage from './pages/ContactPage';
 import GovernmentPage from './pages/GovernmentPage';
 import WorldMapDemo from './pages/WorldMapDemo';
+import TRIVITADemo from './pages/TRIVITADemo';
+
+
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
             <Route path="/government" element={<GovernmentPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/world-map" element={<WorldMapDemo />} />
+            <Route path="/trivita-demo" element={<TRIVITADemo />} />
+
+
           </Routes>
         </AnimatePresence>
       </div>

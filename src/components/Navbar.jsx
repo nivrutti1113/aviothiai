@@ -12,7 +12,9 @@ const Navbar = () => {
     { id: 'platform', label: 'Platform', path: '/platform' },
     { id: 'impact', label: 'Impact & Implementation', path: '/impact' },
     { id: 'government', label: 'Government', path: '/government' },
-    { id: 'contact', label: 'Contact', path: '/contact' }
+    { id: 'contact', label: 'Contact', path: '/contact' },
+    { id: 'trivita-demo', label: 'TRIVITA', path: '/trivita-demo' },
+
   ];
 
   return (

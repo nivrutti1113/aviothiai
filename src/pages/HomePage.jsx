@@ -9,6 +9,24 @@ import FAQSection from '../components/sections/FAQSection';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-white text-gray-900 relative overflow-hidden pt-24">
+      {/* Welcome Message */}
+      <div className="container mx-auto px-6 py-12 text-center">
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="inline-block bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-6 py-3 rounded-full mb-4"
+        >
+          <span className="font-semibold">Welcome to Aviothic AI</span>
+        </motion.div>
+        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+          Welcome to the Future of Medical AI
+        </h1>
+        <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+          Transforming healthcare with cutting-edge artificial intelligence solutions for improved diagnostics and patient outcomes
+        </p>
+      </div>
+      
       {/* Hero Section - Replaced with modern YC-style component */}
       <HeroSection />
 
